@@ -1,0 +1,100 @@
+h3
+  @extend %small-bold
+  color: $accent
+  text-align: center
+  padding-top: 100px
+  padding-bottom: 30px
+
+.feature-img
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-around)
+
+  .face-img
+    +size(229px)
+    background: url(/assets/img/face.jpg)
+    order: 3
+
+  [class^="icon-"]
+    +size(105px)
+    background: $bg-icon
+    border-radius: 50%
+
+    path
+      fill: white
+    &.icon-pen
+      order: 1
+    &.icon-mouse
+      order: 2
+    &.icon-browser
+      order: 4
+    &.icon-action
+      order: 5
+.blurb
+  max-width: 620px
+  padding: 0 15px
+  margin: 50px auto
+  font-size: 24px
+  text-align: center
+  font-weight: 300
+
+.skill-lockup
+  max-width: 780px
+  margin: 100px auto
+  color: #999
+  +clearfix
+
+  .skill-unit
+    width: 390px
+    margin: 0 auto
+    float: left
+    @extend %small-bold
+
+  .skill-bar
+    font-size: 0
+    margin-bottom: 30px
+
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $bg-icon
+      margin-right: 5px
+      border-radius: 50%
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        border-radius: 50%
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.skill-#{$i} span:nth-child(n+#{$i})
+        @extend %skill-color
+
+%skill-color
+  background: $accent
+
+@media screen and (max-width: 670px)
+  .feature-img
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .face-img
+      display: block
+      background-position: center center
+      width: auto
+      background-repeat: no-repeat
+      margin-bottom: 30px
+    [class^="icon-"]
+      margin: 10px
+
+@media screen and (max-width: 541px)
+  .skill-lockup
+    width: 270px
