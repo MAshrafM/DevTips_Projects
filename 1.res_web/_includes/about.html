@@ -2,7 +2,7 @@
   <h3>About Myself</h3>
 
   <div class="feature-img">
-    <div class="face-img"></div>
+    <div class="face-img" style="background-image: url(/assets/img/{{ site.avatar }})"></div>
     <div class="icon-pen">{% include icons/icon-pen.html %}</div>
     <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
     <div class="icon-browser">{% include icons/icon-browser.html %}</div>
@@ -10,15 +10,7 @@
   </div>
 
   <div class="blurb">
-    <p>
-      <strong>My Name is MAshraf and I am an Engineer</strong>, developer and designer.
-    </p>
-    <p>
-      Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-    </p>
-    <p>
-      Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-    </p>
+    {{ site.blurb }}
   </div>
 
   <h3>Skills</h3>

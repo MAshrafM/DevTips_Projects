@@ -1,23 +1,15 @@
 footer
-  background: url(../img/hero-bg.jpg) left center
-  background-size: cover
+  @extend %bg-img
 
 
   .lockup
     padding: 50px 30px
-    background-color: rgba(0,0,0,0.7)
+    background-color: rgba(0,0,0,0.5)
     +clearfix
-
-    .logo
-      +size(50px)
-      float: left
-      margin-right: 30px
-
-      path
-        fill: rgba(255,255,255,0.85)
 
     .content-wrap
       float: left
+      margin-left: 80px
 
       .copyright
         @extend %small-bold
