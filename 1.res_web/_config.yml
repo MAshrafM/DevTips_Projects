@@ -5,19 +5,6 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: MAshraf
-email: ee.mashraf@gmail.com
-description: "Developer // Designer // Engineer"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: ee.mashraf
-github_username:  MAshrafM
-hero: hero-bg.jpg
-logo: logo.svg
-avatar: face.jpg
-blurb: <p><strong>My Name is MAshraf and I am an Engineer</strong>, developer and designer.</p><p>I am a self learner I picked up web development and design from open sources on the web such as The Odin Project, Free Code Camp, Hack Design, Coursera, CodeSchool...etc</p>
-
 # Build settings
 markdown: kramdown
 sass:

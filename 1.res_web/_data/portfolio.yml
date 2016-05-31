@@ -1,0 +1,30 @@
+# Portfolio Settings
+title: "MAshraf"
+description: "Developer // Designer // Engineer"
+email: "ee.mashraf@gmail.com"
+twitter_username: "ee.mashraf"
+github_username:  "MAshrafM"
+
+# MENU ITEM LIST
+menu:
+  - {name: About Me, url: "#about"}
+  - {name: Work, url: "#work"}
+  - {name: Clients, url: "#clients"}
+  - {name: Contact, url: "#contact"}
+# SKILL LIST
+skills:
+  - {name: Communication, value: 8}
+  - {name: Organization, value: 7}
+  - {name: Visual Design, value: 5}
+  - {name: Analytics, value: 6}
+  - {name: Programming, value: 9}
+  - {name: Testing, value: 8}
+  - {name: Teaching, value: 6}
+  - {name: Planning, value: 7}
+# IMAGES
+hero: "hero-bg.jpg"
+logo: "logo.svg"
+avatar: "face.jpg"
+
+# TEXT
+blurb: <p><strong>My Name is MAshraf and I am an Engineer</strong>, developer and designer.</p><p>I am a self learner I picked up web development and design from open sources on the web such as The Odin Project, Free Code Camp, Hack Design, Coursera, CodeSchool...etc</p>
