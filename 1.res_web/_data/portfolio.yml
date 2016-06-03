@@ -21,10 +21,23 @@ skills:
   - {name: Testing, value: 8}
   - {name: Teaching, value: 6}
   - {name: Planning, value: 7}
+
+# WORK Sections
+projects:
+  - {name: Weather, thumb: p1}
+  - {name: Splash, thumb: p2}
+  - {name: Tribute, thumb: p3}
+  - {name: Flight, thumb: p4}
+  - {name: Store, thumb: p5}
+  - {name: Twitch Viewer, thumb: p6}
+  - {name: Wiki Viewer, thumb: p7}
+  - {name: Simon Game, thumb: p8}
 # IMAGES
 hero: "hero-bg.jpg"
+alt-hero: "alt-bg.jpg"
 logo: "logo.svg"
 avatar: "face.jpg"
+mag: "icon-mag.svg"
 
 # TEXT
 blurb: <p><strong>My Name is MAshraf and I am an Engineer</strong>, developer and designer.</p><p>I am a self learner I picked up web development and design from open sources on the web such as The Odin Project, Free Code Camp, Hack Design, Coursera, CodeSchool...etc</p>
