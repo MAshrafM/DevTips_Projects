@@ -1,13 +1,36 @@
 <section class="alt-bg">
   <h3 id="work">Work</h3>
 
-  <div class="thumb-container">
-    {% for project in site.data.portfolio.projects %}
-    <a href="" class="thumb-unit" style="background-image: url(assets/img/work/{{ project.thumb }}.jpg)">
-      <div class="thumb-overlay">
-        <strong>{{ project.name }}</strong>
+
+  <div class="work-belt">
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+        {% for project in site.data.portfolio.projects %}
+        <div class="thumb-unit" style="background-image: url(assets/img/work/{{ project.thumb }}.jpg)">
+          <div class="thumb-overlay">
+            <strong>{{ project.name }}</strong>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-    </a>
-    {% endfor %}
+    </div>
+
+    <div class="project-wrap">
+      <div class="project-expand">
+        <div class="thumb-return">
+          {% include icons/icon-back.html %}
+        </div>
+        <h4 class="project-title">Project Title</h4>
+        <div class="feature-img">
+        </div>
+        <p>
+          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+        </p>
+      </div>
+    </div>
+
   </div>
+
 </section>
