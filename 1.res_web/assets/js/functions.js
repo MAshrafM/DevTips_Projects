@@ -1,6 +1,7 @@
 $(function(){
   smoothScroll(1000);
   workBelt();
+  workLoad();
 });
 
 function smoothScroll(duration){
@@ -26,4 +27,18 @@ function workBelt(){
     $(".project-expand").hide(800);
   });
 
+};
+
+function workLoad(){
+  $.ajaxSetup({ cache: true });
+
+  $('.thumb-unit').click(function(){
+    var $this = $(this),
+        newTitle = $this.find('strong').text(),
+        newFile = $this.data('file'),
+        spinner = '<div class="loader">Loading...</div>',
+        newHTML = '/projects/' + newFile +'.html';
+    $('.project-load').html(spinner).load(newHTML);
+    $('.project-title').text(newTitle);
+  });
 };
