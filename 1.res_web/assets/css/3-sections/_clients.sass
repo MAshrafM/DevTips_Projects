@@ -1,0 +1,88 @@
+.clients-belt
+  width: 100%
+  position: relative
+
+  .client-unit
+    max-width: 700px
+    margin: 0 auto 50px
+    +display(flex)
+
+    .client-face
+      min-width: 300px
+      text-align: center
+
+      img
+        max-width: 100px
+        border-radius: 50%
+
+      .client-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+
+      .client-title
+        font-style: normal
+        font-size: 12px
+        color: #999
+
+    .client-content
+      position: relative
+      font-size: 16px
+      line-height: 32px
+      font-weight: 300
+
+      .client-quote
+        +position(absolute, -10px null null -45px)
+        +size(60px)
+        z-index: -1
+
+        path
+          fill: $accent
+
+
+.clients-logo
+  position: relative
+  width: 100%
+  margin: 0 auto 100px
+  +display(flex)
+  +align-items(space-around)
+  +justify-content(center)
+
+  .client-logo
+    height: 80px
+    min-width: 200px
+    background:
+      image: url(/assets/img/clients/c1.jpg)
+      size: contain
+      position: center
+      repeat: no-repeat
+    cursor: pointer
+    margin: 0 20px
+
+    &.active-client
+      box-shadow: 0px 4px 0px $accent
+
+
+.client-section
+  position: relative
+
+  .clients-controls
+    +position(absolute, 0px 0px 0px 0px)
+    width: 100%
+
+    > div
+      +size(40px)
+
+      svg
+        max-width: 100%
+        max-height: 100%
+
+        path
+          fill : $accent
+
+    .control-next
+      +position(absolute, 50% 10px null null)
+
+    .control-prev
+      +position(absolute, 50% null null 10px)
