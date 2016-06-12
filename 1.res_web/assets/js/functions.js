@@ -2,6 +2,7 @@ $(function(){
   smoothScroll(1000);
   workBelt();
   workLoad();
+  clientActive();
 });
 
 function smoothScroll(duration){
@@ -42,3 +43,48 @@ function workLoad(){
     $('.project-title').text(newTitle);
   });
 };
+
+function clientActive(){
+
+  $('.client-unit').first().addClass('active-client');
+  $('.client-logo').first().addClass('active-client');
+  $('.clients-mobile-nav span').first().addClass('active-client');
+
+
+  $('.client-logo, .clients-mobile-nav span').click(function(){
+    var $this = $(this),
+        $siblings = $this.parent().children(),
+        position = $siblings.index($this);
+
+    $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
+    $siblings.removeClass('active-client');
+    $this.addClass('active-client');
+  });
+
+  $('.control-next, .control-prev').click(function(){
+    var $this = $(this),
+        curr = $('.clients-belt').find('.active-client'),
+        position = $('.clients-belt').children().index(curr),
+        clientNum = $('.client-unit').length;
+
+    if($this.hasClass('control-next')){
+      if(position < clientNum -1){
+        $('.active-client').removeClass('active-client').next().addClass('active-client');
+      }
+      else{
+        $('.client-unit').removeClass('active-client').first().addClass('active-client');
+        $('.client-logo').removeClass('active-client').first().addClass('active-client');
+      }
+    }
+    else{
+      if(position == 0){
+        $('.client-unit').removeClass('active-client').last().addClass('active-client');
+        $('.client-logo').removeClass('active-client').last().addClass('active-client');
+      }
+      else{
+        $('.active-client').removeClass('active-client').prev().addClass('active-client');
+      }
+    }
+
+  });
+}

@@ -1,7 +1,8 @@
 ---
 # This is the Front Matter block
 ---
-
+body
+  overflow-x: hidden
 // This is the single file output by sass. It is intended to ONLY @import other files.
 $logo : '{{ site.data.portfolio.logo }}'
 $hero : '{{ site.data.portfolio.hero }}'
@@ -16,6 +17,7 @@ $icon-mag: '{{ site.data.portfolio.mag }}'
 @import '1-tools/vars'
 @import '1-tools/placeholders'
 @import '1-tools/spinner'
+@import '1-tools/skew'
 
 // 2 - BASICS
 @import '2-basics/body-element'
