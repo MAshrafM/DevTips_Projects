@@ -22,7 +22,7 @@ skills:
   - {name: Teaching, value: 6}
   - {name: Planning, value: 7}
 
-# WORK Sections
+# WORK Section
 projects:
   - {name: Weather, thumb: p1}
   - {name: Splash, thumb: p2}
@@ -33,12 +33,20 @@ projects:
   - {name: Wiki Viewer, thumb: p7}
   - {name: Simon Game, thumb: p8}
 
-# CLIENTS Sections
+# CLIENTS Section
 clients:
   - {avatar: 'f1.png', logo: 'c1.jpg', name: 'Scott Summers', title: 'Director of Design, Quebic Int', quote: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>'}
   - {avatar: 'f2.png', logo: 'c2.jpg', name: 'Steve Rogers', title: 'Director of Design, Quebic Int', quote: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>'}
   - {avatar: 'f3.png', logo: 'c3.jpg', name: 'Tony Stark', title: 'Director of Design, Quebic Int', quote: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>'}
   - {avatar: 'f4.png', logo: 'c4.jpg', name: 'Bruce Wayne', title: 'Director of Design, Quebic Int', quote: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>'}
+
+# Contacts Section
+social:
+  - {icon: 'twitter', link: ''}
+  - {icon: 'github', link: ''}
+  - {icon: 'behance', link: ''}
+  - {icon: 'youtube', link: ''}
+  - {icon: 'linkedin', link: ''}
 
 # IMAGES
 hero: "hero-bg.jpg"
